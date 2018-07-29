@@ -1,0 +1,14 @@
+
+What happens when you initialize a repository? Why do you need to do it?
+
+a .git sub-directory is created to house all the meta-data required for 
+git to track the files in the directory.
+
+You need to do it before performing commits.
+
+How is the staging area different from the working directory and the repository? 
+What value do you think it offers?
+
+It contains files that will be included in the next commit.  It allows the user to
+pick and choose a logical subset of the working directory files for the next commit.
+
