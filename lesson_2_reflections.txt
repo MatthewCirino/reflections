@@ -12,3 +12,27 @@ What value do you think it offers?
 It contains files that will be included in the next commit.  It allows the user to
 pick and choose a logical subset of the working directory files for the next commit.
 
+How can you use the staging area to make sure you have one commit per logical change?
+"git add" only those files to the staging area that involve the logical change.
+
+What are some situations when branches would be helpful in keeping your history 
+organized? How would branches help?
+
+When making large, or experimental changes that you may want to revert at a later
+date.  Branching allows you to fix bugs in the master while working on the larger
+changes.
+
+How do the diagrams help you visualize the branch structure?
+
+By showing the evolving relationships between the branches, common commit ancestors,
+time of branching, commits since branch inceptions, etc.
+
+What is the result of merging two branches together? Why do we represent it in the 
+diagram the way we do?
+
+It merges all their commits in timestamp order.  The merged branch contains all the 
+commits of each parent tree.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Pros: more efficient for non-conflicting changes
+Cons: if too complicated a merge, could confuse developer trying to sort out the conflicts.
